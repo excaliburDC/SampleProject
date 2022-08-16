@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>My project| Crazy Games</title>
+  <title>TeacherSimulator | Crazy Games</title>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
@@ -19,28 +19,22 @@
     }
     var options = {
       author: "Unity Developer",
-      gameName: "My project",
-      gameSlug: slugify("My project"),
+      gameName: "TeacherSimulator",
       gameLink: "https://www.crazygames.com/game/your-game-here",
+      gameSlug: slugify("TeacherSimulator"),
       allowFullscreen: true,
       locale: "en_US",
-      loader: "unity2020",
+      loader: "5.6.x",
       loaderOptions: {
-        unityLoaderUrl: "Build/Builds.loader.js",
-        unityConfigOptions: {
-          "dataUrl": "Build/Builds.data",
-          "frameworkUrl": "Build/Builds.framework.js",
-          "codeUrl": "Build/Builds.wasm",
-          "streamingAssetsUrl": "StreamingAssets",
-        }
+        "moduleJsonUrl": "Build/Builds.json",
+        "unityLoaderUrl": "Build/UnityLoader.js"
       },
       category: "UnitySDK",
       categoryLink: "https://www.crazygames.com",
-      thumbnail: "https://images.crazygames.com/upcoming.png",
+	    thumbnail: "https://images.crazygames.com/upcoming.png",
       gameStatus: "published",
       dollarRate: 1,
       sdkDebug: true,
-      gameLink: 'https://www.crazygames.com/testgame',
       forceTestAds: true,
     };
 
